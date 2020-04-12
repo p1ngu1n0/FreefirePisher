@@ -1,0 +1,121 @@
+/* Live Chat */
+
+#send_message { display: none; }
+
+#typing {
+	margin-top: 227px;
+	position: absolute;
+	margin-left: 15px;
+}
+
+@media (max-width: 991px) {
+	#typing {
+		margin-top: -42px;
+		position: absolute;
+		margin-left: 15px;
+	}
+}
+
+
+.livechatBox {
+    position: relative;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#f6f6f6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
+    opacity: 0.9;
+    padding: 25px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.livechatBox input[type=text] {
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 15px;
+    color: #6e6779;
+    border: 1px solid #dad8de;
+    background: #fff;
+	font: inherit;
+	box-shadow: 0;
+}
+.livechatBox input[type=text]:focus {
+    border-radius: 4px;
+    outline: 0;
+    box-shadow: 0 0 3px rgba(100,65,164,.2);
+    border: 1px solid #cbc8d0;
+}
+
+.livechatBox button {
+    border-radius: 25px;
+    background: #3E61E6;
+    font: inherit;
+    padding: 11px;
+    border: 1px solid #3E61E6;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.livechatBox button:focus, .livechatBox button:hover, .livechatBox button:active:hover, .livechatBox button:active {
+	border-radius: 25px;
+    background: #3E61E6;
+	font: inherit;
+	padding: 11px;
+	border: 1px solid #3E61E6;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.livechatBox .heading h3 {
+    text-align: center;
+    margin: 0 0 15px 0;
+    padding: 0;
+    color: #252525;
+}
+.chat-response-msg {
+	background: #FAF2D9;
+	color: #000;
+}
+.livechatBox .livechatListArea {
+    text-align: left;
+    height: 250px;
+    overflow-y: scroll;
+    padding: 15px 0 15px 0;
+    border-top: 1px solid #dad8de;
+    border-bottom: 1px solid #dad8de;
+    margin-bottom: 20px
+}
+.livechatBox .livechatListArea .chatList {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+.livechatBox .livechatListArea .chatList li {
+    margin: 5px auto
+}
+.livechatBox .livechatListArea .chatList li .name {
+    font-weight: 800
+}
+@media (max-width: 991px) {
+    .livechatBox .livechatListArea .chatList {
+        text-align: left
+    }
+}
+.livechatBox .livechatMsg {
+    width: 100%;
+    padding: 5px
+}
+@media (max-width: 991px) {
+    .livechatBox .livechatSubmtBtn {
+        margin-top: 5px
+    }
+}
